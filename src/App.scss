@@ -1,0 +1,198 @@
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-container {
+  width: 100%;
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .car-emmision-calc-wrapper {
+    margin: 2rem 0;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .car-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .car-logo {
+        font-size: 2rem;
+        color: green;
+      }
+
+      h2 {
+        margin: 0 0.5rem;
+        letter-spacing: 1px;
+        color: green;
+      }
+    }
+  }
+}
+
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  .input-group {
+    margin: 0.5rem 0;
+
+    label {
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+
+    select,
+    input {
+      padding: 0.35rem;
+      margin-left: 1rem;
+      border: 1px solid lightgray;
+    }
+  }
+}
+
+.result-wrapper {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color);
+
+  .inline {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.btn {
+  align-self: flex-start;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: green;
+  border: none;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.current-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+  }
+
+  h4 {
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+  }
+}
+
+.comparision-wrapper {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .comparision-status {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0;
+    align-items: center;
+
+    label {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+
+      a {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+
+    .smile {
+      font-size: 2rem;
+      color: green;
+    }
+
+    .red {
+      font-size: 2rem;
+      color: red;
+    }
+
+    .yellow {
+      font-size: 2rem;
+      color: orange;
+    }
+  }
+}
+
+.summary-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .sask-footprint {
+    margin: 0.5rem 0;
+    width: 2.73%;
+    height: 2rem;
+    background-color: lightgreen;
+    border: 1px solid black;
+  }
+
+  .inline-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .leftalign {
+      width: 30%;
+    }
+
+    .canada-footprint {
+      margin: 0.5rem 0;
+      width: 15.5%;
+      height: 2rem;
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+
+    .world-footprint {
+      margin: 0.5rem 0;
+      width: 4.79%;
+      height: 2rem;
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+
+    .ur-emission {
+      margin: 0.5rem 0;
+      height: 2rem;
+      border: 1px solid black;
+    }
+  }
+}
